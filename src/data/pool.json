@@ -15,6 +15,7 @@
       "Earthquake",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       80,
       82,
@@ -40,6 +41,7 @@
       "Dragon Pulse",
       "Focus Blast"
     ],
+    "level": 90,
     "base": [
       78,
       84,
@@ -64,6 +66,7 @@
       "Rapid Spin",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       79,
       83,
@@ -89,6 +92,7 @@
       "U-turn",
       "Air Slash"
     ],
+    "level": 90,
     "base": [
       83,
       80,
@@ -113,6 +117,7 @@
       "Brick Break",
       "Thunder Wave"
     ],
+    "level": 90,
     "base": [
       60,
       90,
@@ -138,6 +143,7 @@
       "Ice Beam",
       "Thunderbolt"
     ],
+    "level": 90,
     "base": [
       81,
       102,
@@ -162,6 +168,7 @@
       "Energy Ball",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       73,
       76,
@@ -186,6 +193,7 @@
       "Wild Charge",
       "Close Combat"
     ],
+    "level": 90,
     "base": [
       90,
       110,
@@ -210,6 +218,7 @@
       "Focus Blast",
       "Recover"
     ],
+    "level": 90,
     "base": [
       55,
       50,
@@ -234,6 +243,7 @@
       "Ice Punch",
       "Payback"
     ],
+    "level": 90,
     "base": [
       90,
       130,
@@ -259,6 +269,7 @@
       "Ice Beam",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       80,
       70,
@@ -284,6 +295,7 @@
       "Fire Punch",
       "Return"
     ],
+    "level": 90,
     "base": [
       80,
       110,
@@ -309,6 +321,7 @@
       "Thunderbolt",
       "Focus Blast"
     ],
+    "level": 90,
     "base": [
       60,
       65,
@@ -334,6 +347,7 @@
       "Leaf Storm",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       95,
       95,
@@ -359,6 +373,7 @@
       "Thunderbolt",
       "Ice Beam"
     ],
+    "level": 90,
     "base": [
       60,
       75,
@@ -384,6 +399,7 @@
       "Stone Edge",
       "Dragon Dance"
     ],
+    "level": 90,
     "base": [
       95,
       125,
@@ -409,6 +425,7 @@
       "Thunderbolt",
       "Psychic"
     ],
+    "level": 90,
     "base": [
       130,
       85,
@@ -433,6 +450,7 @@
       "Signal Beam",
       "Thunder Wave"
     ],
+    "level": 90,
     "base": [
       65,
       65,
@@ -457,6 +475,7 @@
       "Earthquake",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       160,
       110,
@@ -482,6 +501,7 @@
       "Earthquake",
       "Roost"
     ],
+    "level": 90,
     "base": [
       91,
       134,
@@ -506,6 +526,7 @@
       "Toxic",
       "Synthesis"
     ],
+    "level": 90,
     "base": [
       80,
       82,
@@ -530,6 +551,7 @@
       "Focus Blast",
       "Solar Beam"
     ],
+    "level": 90,
     "base": [
       78,
       84,
@@ -554,6 +576,7 @@
       "Crunch",
       "Earthquake"
     ],
+    "level": 90,
     "base": [
       85,
       105,
@@ -578,6 +601,7 @@
       "Focus Blast",
       "Thunder Wave"
     ],
+    "level": 90,
     "base": [
       90,
       75,
@@ -602,6 +626,7 @@
       "Grass Knot",
       "Calm Mind"
     ],
+    "level": 90,
     "base": [
       65,
       65,
@@ -626,6 +651,7 @@
       "Toxic",
       "Moonlight"
     ],
+    "level": 90,
     "base": [
       95,
       65,
@@ -651,6 +677,7 @@
       "Stone Edge",
       "Crunch"
     ],
+    "level": 90,
     "base": [
       75,
       85,
@@ -676,6 +703,7 @@
       "Night Slash",
       "Swords Dance"
     ],
+    "level": 90,
     "base": [
       70,
       130,
@@ -701,6 +729,7 @@
       "Stone Edge",
       "Night Slash"
     ],
+    "level": 90,
     "base": [
       80,
       125,
@@ -726,6 +755,7 @@
       "Sludge Bomb",
       "Nasty Plot"
     ],
+    "level": 90,
     "base": [
       75,
       90,
@@ -751,6 +781,7 @@
       "Ice Beam",
       "Flash Cannon"
     ],
+    "level": 90,
     "base": [
       75,
       95,
@@ -776,6 +807,7 @@
       "Earthquake",
       "Ice Beam"
     ],
+    "level": 90,
     "base": [
       100,
       134,
@@ -800,6 +832,7 @@
       "Focus Blast",
       "Leaf Storm"
     ],
+    "level": 90,
     "base": [
       70,
       85,
@@ -825,6 +858,7 @@
       "Stone Edge",
       "Brave Bird"
     ],
+    "level": 90,
     "base": [
       80,
       120,
@@ -850,6 +884,7 @@
       "Ice Beam",
       "Stone Edge"
     ],
+    "level": 90,
     "base": [
       100,
       110,
@@ -874,6 +909,7 @@
       "Thunderbolt",
       "Calm Mind"
     ],
+    "level": 90,
     "base": [
       68,
       65,
@@ -899,6 +935,7 @@
       "Earthquake",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       70,
       110,
@@ -924,6 +961,7 @@
       "Stone Edge",
       "Fire Punch"
     ],
+    "level": 90,
     "base": [
       80,
       100,
@@ -949,6 +987,7 @@
       "Flamethrower",
       "Roost"
     ],
+    "level": 90,
     "base": [
       75,
       70,
@@ -973,6 +1012,7 @@
       "Dragon Pulse",
       "Recover"
     ],
+    "level": 90,
     "base": [
       95,
       60,
@@ -997,6 +1037,7 @@
       "Sucker Punch",
       "Superpower"
     ],
+    "level": 90,
     "base": [
       65,
       130,
@@ -1022,6 +1063,7 @@
       "Earthquake",
       "Stone Edge"
     ],
+    "level": 90,
     "base": [
       95,
       135,
@@ -1047,6 +1089,7 @@
       "Earthquake",
       "Bullet Punch"
     ],
+    "level": 90,
     "base": [
       80,
       135,
@@ -1072,6 +1115,7 @@
       "Stone Edge",
       "Crunch"
     ],
+    "level": 90,
     "base": [
       95,
       109,
@@ -1097,6 +1141,7 @@
       "U-turn",
       "Stone Edge"
     ],
+    "level": 90,
     "base": [
       76,
       104,
@@ -1122,6 +1167,7 @@
       "Ice Beam",
       "Grass Knot"
     ],
+    "level": 90,
     "base": [
       84,
       86,
@@ -1146,6 +1192,7 @@
       "Ice Fang",
       "Thunderbolt"
     ],
+    "level": 90,
     "base": [
       80,
       120,
@@ -1171,6 +1218,7 @@
       "Shadow Ball",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       60,
       70,
@@ -1195,6 +1243,7 @@
       "Zen Headbutt",
       "Crunch"
     ],
+    "level": 90,
     "base": [
       97,
       165,
@@ -1220,6 +1269,7 @@
       "Stone Edge",
       "Fire Fang"
     ],
+    "level": 90,
     "base": [
       108,
       130,
@@ -1245,6 +1295,7 @@
       "Dragon Pulse",
       "Extreme Speed"
     ],
+    "level": 90,
     "base": [
       70,
       110,
@@ -1270,6 +1321,7 @@
       "Brick Break",
       "Ice Beam"
     ],
+    "level": 90,
     "base": [
       70,
       120,
@@ -1295,6 +1347,7 @@
       "Volt Switch",
       "Metal Sound"
     ],
+    "level": 90,
     "base": [
       70,
       70,
@@ -1320,6 +1373,7 @@
       "Megahorn",
       "Ice Beam"
     ],
+    "level": 90,
     "base": [
       115,
       140,
@@ -1344,6 +1398,7 @@
       "Earthquake",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       75,
       123,
@@ -1369,6 +1424,7 @@
       "Flamethrower",
       "Roost"
     ],
+    "level": 90,
     "base": [
       85,
       50,
@@ -1393,6 +1449,7 @@
       "Return",
       "Swords Dance"
     ],
+    "level": 90,
     "base": [
       65,
       110,
@@ -1417,6 +1474,7 @@
       "Signal Beam",
       "Hail"
     ],
+    "level": 90,
     "base": [
       65,
       60,
@@ -1442,6 +1500,7 @@
       "Night Slash",
       "Swords Dance"
     ],
+    "level": 90,
     "base": [
       68,
       125,
@@ -1466,6 +1525,7 @@
       "Ice Punch",
       "Toxic"
     ],
+    "level": 90,
     "base": [
       45,
       100,
@@ -1490,6 +1550,7 @@
       "Dragon Pulse",
       "Glare"
     ],
+    "level": 90,
     "base": [
       75,
       75,
@@ -1515,6 +1576,7 @@
       "Stone Edge",
       "Wild Charge"
     ],
+    "level": 90,
     "base": [
       110,
       123,
@@ -1539,6 +1601,7 @@
       "Megahorn",
       "Grass Knot"
     ],
+    "level": 90,
     "base": [
       95,
       100,
@@ -1563,6 +1626,7 @@
       "Thunderbolt",
       "Thunder Wave"
     ],
+    "level": 90,
     "base": [
       75,
       100,
@@ -1588,6 +1652,7 @@
       "Rock Slide",
       "Swords Dance"
     ],
+    "level": 90,
     "base": [
       110,
       135,
@@ -1612,6 +1677,7 @@
       "Stone Edge",
       "Ice Punch"
     ],
+    "level": 90,
     "base": [
       105,
       140,
@@ -1636,6 +1702,7 @@
       "Sleep Powder",
       "Quiver Dance"
     ],
+    "level": 90,
     "base": [
       70,
       60,
@@ -1661,6 +1728,7 @@
       "Stone Edge",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       95,
       117,
@@ -1686,6 +1754,7 @@
       "Stone Edge",
       "Bulk Up"
     ],
+    "level": 90,
     "base": [
       65,
       90,
@@ -1711,6 +1780,7 @@
       "Aqua Jet",
       "Crunch"
     ],
+    "level": 90,
     "base": [
       74,
       108,
@@ -1736,6 +1806,7 @@
       "Dragon Claw",
       "Crunch"
     ],
+    "level": 90,
     "base": [
       75,
       140,
@@ -1760,6 +1831,7 @@
       "Focus Blast",
       "Dark Pulse"
     ],
+    "level": 90,
     "base": [
       60,
       105,
@@ -1784,6 +1856,7 @@
       "Focus Blast",
       "Recover"
     ],
+    "level": 90,
     "base": [
       110,
       65,
@@ -1808,6 +1881,7 @@
       "Flash Cannon",
       "Hail"
     ],
+    "level": 90,
     "base": [
       71,
       95,
@@ -1833,6 +1907,7 @@
       "Energy Ball",
       "Thunder Wave"
     ],
+    "level": 90,
     "base": [
       70,
       77,
@@ -1857,6 +1932,7 @@
       "Hyper Beam",
       "Metal Sound"
     ],
+    "level": 90,
     "base": [
       60,
       100,
@@ -1882,6 +1958,7 @@
       "Psychic",
       "Energy Ball"
     ],
+    "level": 90,
     "base": [
       60,
       55,
@@ -1906,6 +1983,7 @@
       "Rock Slide",
       "Swords Dance"
     ],
+    "level": 90,
     "base": [
       76,
       147,
@@ -1930,6 +2008,7 @@
       "Aqua Jet",
       "Brick Break"
     ],
+    "level": 90,
     "base": [
       95,
       130,
@@ -1954,6 +2033,7 @@
       "Acrobatics",
       "Fake Out"
     ],
+    "level": 90,
     "base": [
       65,
       125,
@@ -1979,6 +2059,7 @@
       "Rock Slide",
       "Superpower"
     ],
+    "level": 90,
     "base": [
       100,
       123,
@@ -2004,6 +2085,7 @@
       "Fire Blast",
       "Surf"
     ],
+    "level": 90,
     "base": [
       92,
       105,
@@ -2029,6 +2111,7 @@
       "Psychic",
       "Roost"
     ],
+    "level": 90,
     "base": [
       85,
       60,

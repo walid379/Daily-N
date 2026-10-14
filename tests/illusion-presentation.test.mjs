@@ -17,8 +17,9 @@ function importTS(file,deps={}) {
 const daily=importTS('../src/data/daily.ts');
 const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.url),'utf8'));
 const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
-const reordered={...teams,bossFor:key=>{const mons=teams.bossFor(key);return [mons[4],...mons.filter((_,i)=>i!==4)]}};
-const {DailyBattle}=importTS('../src/engine/showdown.ts',{'../data/daily':daily,'../data/teams':reordered});
+const reordered={...teams,asSet:mon=>{const set=teams.asSet(mon);return mon.species==='Garchomp'?{...set,level:100}:set},bossFor:key=>{const mons=teams.bossFor(key);return [mons[4],...mons.filter((_,i)=>i!==4)]}};
+const bossAI=importTS('../src/lib/bossAI.ts');
+const {DailyBattle}=importTS('../src/engine/showdown.ts',{'../data/daily':daily,'../data/teams':reordered,'../lib/bossAI':bossAI});
 const {IllusionPresentation}=importTS('../src/lib/illusionView.ts');
 async function until(check){for(let i=0;i<500;i++){if(check())return;await new Promise(r=>setTimeout(r,10))}throw new Error('Attente du simulateur expirée')}
 
@@ -31,12 +32,17 @@ test('la révélation de Zoroark conserve ses PV déjà perdus sous Illusion',as
   assert.ok(fang>=0);battle.choose(`move ${fang+1}`);
   await until(()=>frames.some(f=>f.kind==='replace'&&f.actor==='p2')&&raw?.turn>=2);
   const presenter=new IllusionPresentation();
-  const reveal=frames.map(f=>presenter.frame(f)).find(f=>f.kind==='replace'&&f.actor==='p2');
+  const projected=frames.map(f=>presenter.frame(f));
+  const revealIndex=projected.findIndex(f=>f.kind==='replace'&&f.actor==='p2');
+  const reveal=projected[revealIndex];
   assert.ok(reveal);
-  assert.equal(reveal.state.foes[0].hp,126,'Zoroark a perdu 26 PV par Orbe Vie et 110 par Crocs Feu');
+  const priorDamage=frames.slice(0,revealIndex).filter(f=>f.kind==='-damage'&&f.actor==='p2').at(-1);
+  assert.ok(priorDamage,'le Pokémon déguisé doit avoir perdu des PV');
+  assert.equal(reveal.state.foes[0].hp,priorDamage.state.foes[5].hp,'les PV du déguisement appartiennent à Zoroark');
+  assert.ok(reveal.state.foes[0].hp<reveal.state.foes[0].maxHp);
   assert.equal(reveal.state.foes[0].maxHp,262);
   assert.equal(reveal.state.foes[5].hp,100,'Cliticlic n’a pas subi ces dégâts');
-  assert.equal(presenter.state(raw).foes[0].hp,126,'l’état final doit garder les mêmes PV');
+  assert.equal(presenter.state(raw).foes[0].hp,reveal.state.foes[0].hp,'l’état final doit garder les mêmes PV');
  }finally{battle.destroy()}
 });
 

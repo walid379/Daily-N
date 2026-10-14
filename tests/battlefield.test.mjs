@@ -12,7 +12,8 @@ const daily=importTS('../src/data/daily.ts');
 const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.url),'utf8'));
 const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
 const mockDex={mod:()=>({})};
-const {DailyBattle,shouldPresent}=importTS('../src/engine/showdown.ts',{'@pkmn/sim':{Dex:mockDex,BattleStreams:{},Teams:{}},'../data/daily':daily,'../data/teams':teams});
+const bossAI=importTS('../src/lib/bossAI.ts');
+const {DailyBattle,shouldPresent}=importTS('../src/engine/showdown.ts',{'@pkmn/sim':{BattleStreams:{},Teams:{}},'../data/daily':daily,'../data/teams':teams,'../lib/bossAI':bossAI});
 const {frameDuration,animatesHP}=importTS('../src/lib/presentation.ts');
 const {activeSpecies,visibleActiveSlot}=importTS('../src/lib/active.ts');
 function make(){const frames=[];let ending='';const b=new DailyBattle({key:'2026-10-14',lead:0,isPractice:true,onState:()=>{},onEnd:v=>ending=v,onEvent:v=>frames.push(v)});return {b,frames,get ending(){return ending;}};}

@@ -3,7 +3,8 @@
  * objets, météo, recharge, Illusion...) est déléguée à @pkmn/sim.
  * On ne simule ici que les décisions du bot et la présentation du protocole.
  */
-import {BattleStreams, Teams, Dex} from '@pkmn/sim';
+import {BattleStreams, Teams} from '@pkmn/sim';
+import {chooseBossAction} from '../lib/bossAI';
 import {battleSeed, hash32, rng} from '../data/daily';
 import {asSet, bossFor, teamFor, type TeamMon} from '../data/teams';
 
@@ -102,32 +103,6 @@ function logMessage(line: string): string | null {
   }
 }
 
-/** Score de décision tactique basique : l'IA n'altère jamais les règles de combat. */
-function aiDecision(req: SimRequest, random: () => number, target: TeamMon): string {
-  if (req.wait) return '';
-  if (req.teamPreview) return 'team 123456';
-  if (req.forceSwitch?.some(Boolean)) {
-    const options = (req.side?.pokemon || []).flatMap((p,i) => !p.active && !condition(p.condition).status.includes('fnt') && condition(p.condition).hp > 0 ? [i+1] : []);
-    return options.length ? `switch ${options[Math.floor(random() * options.length)]}` : 'pass';
-  }
-  const active = req.active?.[0];
-  if (!active) return 'pass';
-  const candidates = active.moves.map((m,i) => ({m,i})).filter(({m}) => !m.disabled && m.pp > 0);
-  if (!candidates.length) return 'move 1'; // Lutte : Pokémon Showdown la gère quand PP épuisés.
-  const gen = Dex.mod('gen5');
-  const scored = candidates.map(({m,i}) => {
-    const move = gen.moves.get(m.id || m.move);
-    const species = gen.species.get(target.species);
-    // Les mouvements de statut conservent une probabilité d'utilisation.
-    const effectiveness = move.exists && species.exists ? Math.pow(2, gen.getEffectiveness(move.type, species)) : 1;
-    const power = (move.basePower || 32) * Math.max(.2, effectiveness);
-    const accuracy = typeof move.accuracy === 'number' ? move.accuracy / 100 : 1;
-    return {i,score: power * accuracy + random() * 26};
-  });
-  scored.sort((a,b)=>b.score-a.score);
-  return `move ${scored[0].i+1}`;
-}
-
 export class DailyBattle {
   private key: string;
   private callbacks: {onState: (value: ViewState) => void; onEnd: (result: Outcome) => void; onEvent?: (frame: BattleFrame) => void};
@@ -205,7 +180,7 @@ export class DailyBattle {
             if(side==='p1') this.onRequest(request);
             else if(!request.wait && !this.state.outcome) {
               const target = this.team[this.state.allyActive] || this.team[0];
-              const choice = aiDecision(request,this.random,target);
+              const choice = chooseBossAction(request,this.random,target);
               if(choice) this.write(`>p2 ${choice}`);
             }
           } else if(side==='p1') this.onProtocol(line);

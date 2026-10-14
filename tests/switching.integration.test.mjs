@@ -11,7 +11,8 @@ function importTS(file,deps={}) {
 const daily=importTS('../src/data/daily.ts');
 const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.url),'utf8'));
 const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
-const {DailyBattle}=importTS('../src/engine/showdown.ts',{'../data/daily':daily,'../data/teams':teams});
+const bossAI=importTS('../src/lib/bossAI.ts');
+const {DailyBattle}=importTS('../src/engine/showdown.ts',{'../data/daily':daily,'../data/teams':teams,'../lib/bossAI':bossAI});
 const {requestTeamIndex}=importTS('../src/lib/active.ts');
 async function until(condition,ms=5000){
  const deadline=Date.now()+ms;
@@ -38,6 +39,30 @@ test('changement volontaire : le moteur accepte le remplaçant puis le retour, a
   assert.equal(state.allyActive,0);
   assert.equal(result,undefined);
  }finally{battle.destroy();}
+});
+
+test('un combat entier se termine avec les nouvelles équipes sur les deux variantes de N',async()=>{
+ for(const key of ['2026-10-14','2026-10-15']){
+  let state,result;
+  const battle=new DailyBattle({key,lead:0,isPractice:true,onState:s=>{state=s},onEnd:r=>{result=r}});
+  try{
+   await battle.start();
+   await until(()=>state?.request?.active?.length && state?.turn>=1 && !state.busy);
+   for(let actions=0;actions<120 && !result;actions++){
+    assert.equal(state.error,null,`${key}: ${state.error}`);
+    const req=state.request;
+    const switchIndex=req.forceSwitch?.some(Boolean)
+     ? req.side.pokemon.findIndex(p=>!p.active&&!p.condition.includes('fnt')&&!p.condition.startsWith('0')) : -1;
+    const moveIndex=req.active?.[0]?.moves.findIndex(m=>!m.disabled&&m.pp>0)??-1;
+    const choice=switchIndex>=0?`switch ${switchIndex+1}`:`move ${Math.max(0,moveIndex)+1}`;
+    assert.equal(battle.choose(choice),true,`${key}: ${choice}`);
+    await until(()=>result||state?.error||(!state?.busy&&state?.request!==req),10000);
+   }
+   assert.equal(state.error,null,`${key}: ${state.error}`);
+   assert.equal(result,'loss',`${key}: une stratégie naïve doit perdre contre N`);
+   assert.ok(state.turn>=1);
+  }finally{battle.destroy();}
+ }
 });
 
 test('après un K.O. réel, un remplaçant valide entre sans perdre le roster',async()=>{

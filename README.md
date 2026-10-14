@@ -5,7 +5,7 @@
 ## Comment jouer
 
 1. **Découvrez votre équipe** dans « Mon équipe ». Ses six Pokémon, leurs capacités et leurs objets sont fixés pour la journée. Vous pouvez choisir votre Pokémon de tête **avant** de commencer le défi officiel, mais vous ne pouvez pas remplacer les six Pokémon tirés.
-2. **Affrontez N** depuis l'accueil ou l'écran « Le défi ». Son équipe comprend Mégapagos, Sorbouboul, Aéroptéryx, Zoroark, Cliticlic et un dragon légendaire. **Zekrom et Reshiram alternent d'un jour à l'autre.**
+2. **Affrontez N** depuis l'accueil ou l'écran « Le défi ». Son équipe comprend Mégapagos, Sorbouboul, Aéroptéryx, Zoroark, Cliticlic et un dragon légendaire. **Zekrom et Reshiram alternent d'un jour à l'autre.** Vos Pokémon sont niveau 90 contre les niveau 100 de N ; il choisit ses attaques selon les résistances, la puissance et la précision, et sélectionne un remplaçant adapté après un K.O.
 3. **Jouez tour par tour** : choisissez une attaque ou « Changer de Pokémon ». Les attaques ont un type, une puissance, une précision et des PP. Le simulateur gère les dégâts, les objets, les talents, les statuts et les effets de terrain. Quand l'un de vos Pokémon est K.O., choisissez un remplaçant encore disponible.
 4. **Éliminez les six Pokémon de N** pour gagner ; si toute votre équipe tombe K.O., vous perdez. L'écran de fin affiche le résultat. En cas de victoire, N apparaît avec une réplique. Consultez ensuite « Statistiques » pour voir vos combats, victoires et séries.
 

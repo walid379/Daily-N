@@ -14,7 +14,8 @@ const daily=importTS('../src/data/daily.ts');
 const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.url),'utf8'));
 const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
 const mockDex={mod:()=>({moves:{get:()=>({name:'Éclair',type:'Electric',category:'Special',basePower:90,accuracy:100,desc:'Deals damage with a chance to paralyze.',secondary:{chance:10,status:'par'}})},species:{get:()=>({exists:true})},getEffectiveness:()=>1,getImmunity:()=>true})};
-const engine=importTS('../src/engine/showdown.ts',{'@pkmn/sim':{Dex:mockDex,BattleStreams:{},Teams:{}},'../data/daily':daily,'../data/teams':teams});
+const bossAI=importTS('../src/lib/bossAI.ts');
+const engine=importTS('../src/engine/showdown.ts',{'@pkmn/sim':{BattleStreams:{},Teams:{}},'../data/daily':daily,'../data/teams':teams,'../lib/bossAI':bossAI});
 const moves=importTS('../src/data/moves.ts',{'@pkmn/sim':{Dex:mockDex},'./teams':teams});
 test('les messages secondaires restent dans le journal mais ne bloquent plus les animations',()=>{
   const frames=[];

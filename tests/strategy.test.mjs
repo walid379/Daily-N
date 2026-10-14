@@ -12,6 +12,19 @@ const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.u
 const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
 const {Dex}=require('@pkmn/sim'), gen=Dex.mod('gen5');
 
+test('le défi difficile place les 83 Pokémon joueurs au niveau 90, N au niveau 100',()=>{
+ for(const mon of pool) assert.equal(teams.asSet(mon).level,90,mon.label);
+ for(const key of ['2026-10-14','2026-10-15'])
+  for(const mon of teams.bossFor(key)) assert.equal(teams.asSet(mon).level,100,mon.label);
+});
+
+test('les niveaux réellement joués sont affichés dans l’arène et le roster',()=>{
+ const app=readFileSync(new URL('../src/App.vue',import.meta.url),'utf8');
+ assert.match(app,/NV\.\{\{allySpec\.level\?\?100\}\}/);
+ assert.match(app,/NV\. '\+\(mon\.level\?\?100\)/);
+ assert.match(app,/niveau 90, ceux de N niveau 100/);
+});
+
 test('les 83 sets joueurs ont IV maximaux, EV concentrés, nature utile et options Gen 5 existantes',()=>{
  for(const mon of pool){
   const set=teams.asSet(mon);

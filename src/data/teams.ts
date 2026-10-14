@@ -10,6 +10,7 @@ export interface TeamMon {
   item: string;
   moves: string[];
   base: number[];
+  level?: number;
   nature?: string;
   evs?: {hp: number; atk: number; def: number; spa: number; spd: number; spe: number};
 }
@@ -78,7 +79,7 @@ export function asSet(mon: TeamMon): PokemonSet {
   const {evs, nature} = training(mon);
   return {
     name: mon.label, species: mon.species, ability: mon.ability, item: mon.item,
-    moves: mon.moves, level: 100, nature,
+    moves: mon.moves, level: mon.level ?? 100, nature,
     evs, ivs: {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31},
   };
 }
