@@ -1,0 +1,72 @@
+/* Interface de combat : barre de PV et Poké Balls, sans changer la simulation. */
+.battle-status {
+  background:#f8f6e9;
+  border:2px solid #293d42;
+  border-bottom-width:4px;
+  border-radius:8px;
+  box-shadow:4px 5px 0 #0b17239c,0 10px 22px #0005;
+  color:#243639;
+}
+.battle-status-line b {letter-spacing:.015em}
+.hp-meter {display:flex;align-items:center;gap:6px}
+.hp-label {
+  flex:none;padding:2px 4px;border-radius:2px;
+  background:#e99d24;color:#fff;font-size:9px;font-weight:900;line-height:1.15;
+  text-shadow:0 1px #946313;
+}
+.hp-rail {
+  flex:1;height:12px;border:2px solid #334748;border-radius:4px;
+  background:#485958;box-shadow:inset 0 2px 2px #14272777;
+}
+.hp-progress {
+  border-radius:2px;
+  background:#48c98a;
+  box-shadow:inset 0 2px #b8f3c56b,inset 0 -2px #24765466;
+}
+.hp-rail.warning .hp-progress {background:#e5ba48;box-shadow:inset 0 2px #fff0ac91,inset 0 -2px #9a642861}
+.hp-rail.danger .hp-progress {background:#e4685b;box-shadow:inset 0 2px #ffc4a795,inset 0 -2px #8b303b66}
+.hp-fraction {justify-content:flex-end;padding-top:4px;font-family:'Space Grotesk',sans-serif;font-size:11px;color:#354943}
+
+/* Le sprite reste celui de l'ancien combattant jusqu'à la fin du rappel. */
+.switch-effect {position:absolute;inset:0;z-index:6;pointer-events:none;--ball-x:27%;--ball-y:58%}
+.switch-effect.p2 {--ball-x:72%;--ball-y:36%}
+.pokeball {
+  position:absolute;left:var(--ball-x);top:var(--ball-y);
+  width:38px;height:38px;filter:drop-shadow(0 5px 5px #0009);
+}
+.pokeball i {display:block;position:absolute;left:0;width:100%;border:3px solid #17242d}
+.ball-top {top:0;height:51%;border-radius:22px 22px 2px 2px;background:#e85459;transform-origin:18% 95%;z-index:1}
+.ball-bottom {bottom:0;height:51%;border-radius:2px 2px 22px 22px;background:#faf7e9}
+.pokeball .ball-button {
+  z-index:2;top:14px;left:14px;width:11px;height:11px;
+  border:3px solid #17242d;border-radius:50%;background:#f9fbef;
+  box-shadow:0 0 0 2px #f9fbef;
+}
+.switch-beam {
+  position:absolute;left:calc(var(--ball-x) - 35px);top:calc(var(--ball-y) - 35px);
+  width:110px;height:110px;border-radius:50%;opacity:0;
+  background:radial-gradient(circle,#fff 0 7%,#b8f7dfca 15%,#73dfd558 38%,transparent 70%);
+  mix-blend-mode:screen;
+}
+.switch-effect.recall .pokeball {animation:ball-recall var(--switch-ms) ease-out both}
+.switch-effect.recall .ball-top {animation:ball-lid-recall var(--switch-ms) ease-in-out both}
+.switch-effect.recall .switch-beam {animation:light-recall var(--switch-ms) ease-out both}
+.switch-effect.send.p1 .pokeball {animation:ball-throw-ally var(--switch-ms) cubic-bezier(.2,.65,.4,1) both}
+.switch-effect.send.p2 .pokeball {animation:ball-throw-foe var(--switch-ms) cubic-bezier(.2,.65,.4,1) both}
+.switch-effect.send .ball-top {animation:ball-lid-send var(--switch-ms) ease-in-out both}
+.switch-effect.send .switch-beam {animation:light-send var(--switch-ms) ease-out both}
+.ally-sprite.recalling {animation:recall-ally var(--switch-ms) ease-in both!important}
+.foe-sprite.recalling {animation:recall-foe var(--switch-ms) ease-in both!important}
+.ally-sprite.materializing,.foe-sprite.materializing {animation:arrive-mon var(--switch-ms) ease-out both!important}
+@keyframes ball-recall {0%{opacity:0;transform:scale(.35)} 20%{opacity:1;transform:scale(1.13)} 80%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:scale(.65)}}
+@keyframes ball-lid-recall {0%,20%{transform:none} 38%,76%{transform:translate(-4px,-12px) rotate(-26deg)} 100%{transform:none}}
+@keyframes light-recall {0%,25%{opacity:0;transform:scale(.35)} 48%{opacity:1;transform:scale(1.25)} 90%,100%{opacity:0;transform:scale(.3)}}
+@keyframes recall-ally {0%,23%{opacity:1;transform:none} 75%{opacity:.8;transform:translate(8px,-17px) scale(.55);filter:brightness(2.2)} 100%{opacity:0;transform:translate(12px,-24px) scale(.04)}}
+@keyframes recall-foe {0%,23%{opacity:1;transform:none} 75%{opacity:.8;transform:translate(-12px,3px) scale(.55);filter:brightness(2.2)} 100%{opacity:0;transform:translate(-20px,5px) scale(.04)}}
+@keyframes ball-throw-ally {0%{opacity:1;transform:translate(-290px,135px) rotate(-540deg) scale(.7)} 47%{opacity:1;transform:translate(0,0) rotate(0) scale(1.15)} 78%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:scale(.3)}}
+@keyframes ball-throw-foe {0%{opacity:1;transform:translate(290px,-145px) rotate(540deg) scale(.7)} 47%{opacity:1;transform:translate(0,0) rotate(0) scale(1.15)} 78%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:scale(.3)}}
+@keyframes ball-lid-send {0%,48%{transform:none} 61%,83%{transform:translate(-4px,-12px) rotate(-26deg)} 100%{transform:none}}
+@keyframes light-send {0%,47%{opacity:0;transform:scale(.3)} 65%{opacity:1;transform:scale(1.35)} 100%{opacity:0;transform:scale(1.8)}}
+@keyframes arrive-mon {0%,55%{opacity:0;transform:translateY(18px) scale(.06)} 78%{opacity:1;transform:translateY(-7px) scale(1.08);filter:brightness(1.8)} 100%{opacity:1;transform:none}}
+@media(max-width:620px){.pokeball{width:30px;height:30px}.pokeball .ball-button{top:11px;left:11px;width:9px;height:9px}.switch-effect.p1{--ball-x:29%;--ball-y:65%}.switch-effect.p2{--ball-x:72%;--ball-y:40%}}
+@media(prefers-reduced-motion:reduce){.switch-effect{display:none}.recalling,.materializing{animation:none!important}}

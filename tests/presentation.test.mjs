@@ -1,0 +1,50 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {readFileSync} from 'node:fs';
+const require=createRequire(import.meta.url);
+const ts=require('typescript');
+function importTS(file,deps={}) {
+  const code=ts.transpileModule(readFileSync(new URL(file,import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true,resolveJsonModule:true}}).outputText;
+  const m={exports:{}};
+  new Function('require','module','exports',code)(path=>deps[path]??require(path),m,m.exports);
+  return m.exports;
+}
+const daily=importTS('../src/data/daily.ts');
+const pool=JSON.parse(readFileSync(new URL('../src/data/pool.json',import.meta.url),'utf8'));
+const teams=importTS('../src/data/teams.ts',{'./daily':daily,'./pool.json':pool});
+const mockDex={mod:()=>({moves:{get:()=>({name:'Éclair',type:'Electric',category:'Special',basePower:90,accuracy:100,desc:'Deals damage with a chance to paralyze.',secondary:{chance:10,status:'par'}})},species:{get:()=>({exists:true})},getEffectiveness:()=>1,getImmunity:()=>true})};
+const engine=importTS('../src/engine/showdown.ts',{'@pkmn/sim':{Dex:mockDex,BattleStreams:{},Teams:{}},'../data/daily':daily,'../data/teams':teams});
+const moves=importTS('../src/data/moves.ts',{'@pkmn/sim':{Dex:mockDex},'./teams':teams});
+test('les messages secondaires restent dans le journal mais ne bloquent plus les animations',()=>{
+  const frames=[];
+  let ending='';
+  const battle=new engine.DailyBattle({key:'2026-10-14',lead:0,isPractice:true,onState:()=>{},onEnd:outcome=>ending=outcome,onEvent:frame=>frames.push(frame)});
+  battle.onProtocol('|switch|p2a: Zekrom|Zekrom, L100|100/100');
+  battle.onProtocol('|turn|1');
+  battle.onProtocol('|move|p1a: Mon Pokémon|Éclair|p2a: Zekrom');
+  battle.onProtocol('|-damage|p2a: Zekrom|50/100');
+  battle.onProtocol('|-supereffective|p2a: Zekrom');
+  battle.onProtocol('|faint|p2a: Zekrom');
+  battle.onProtocol('|win|Dresseur');
+  assert.deepEqual(frames.map(e=>e.kind),['switch','move','-damage','faint','win']);
+  assert.equal(frames[1].state.foes[0].hp,100);
+  assert.equal(frames[2].state.foes[0].hp,50);
+  assert.equal(frames[3].state.foes[0].hp,0);
+  assert.equal(frames[3].state.foes[0].fainted,true);
+  assert.equal(frames[4].state.outcome,'win');
+  assert.equal(ending,'win');
+  assert.equal(frames[1].actor,'p1');
+  assert.equal(frames[2].actor,'p2');
+  assert.ok(battle.snapshot.logs.includes('C’est super efficace !'));
+  assert.equal(frames.some(e=>e.kind==='turn'||e.kind==='-supereffective'),false);
+});
+test('les informations techniques d’une capacité affichent puissance, précision, statut et efficacité',()=>{
+  const m=moves.moveCard('thunderbolt','Carracosta');
+  assert.equal(m.categoryFr,'SPÉCIALE');
+  assert.equal(m.typeFr,'ÉLECTRIK');
+  assert.equal(m.power,'90');
+  assert.equal(m.accuracy,'100 %');
+  assert.match(m.summary,/paralysie/);
+  assert.match(m.effectiveness,/×2/);
+});

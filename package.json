@@ -1,0 +1,23 @@
+{
+  "name": "daily-n",
+  "version": "2.2.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "pages": "npm run build && node scripts/build-pages.mjs"
+  },
+  "dependencies": {
+    "@pkmn/sim": "0.10.11",
+    "vue": "^3.5.20"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.0",
+    "vue-tsc": "^3.1.0"
+  }
+}

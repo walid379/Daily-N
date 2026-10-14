@@ -1,0 +1,2041 @@
+[
+  {
+    "id": 3,
+    "label": "Florizarre",
+    "species": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "ability": "Overgrow",
+    "item": "Life Orb",
+    "moves": [
+      "Energy Ball",
+      "Sludge Bomb",
+      "Earthquake",
+      "Toxic"
+    ],
+    "base": [
+      80,
+      82,
+      83,
+      100,
+      100,
+      80
+    ]
+  },
+  {
+    "id": 6,
+    "label": "Dracaufeu",
+    "species": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "ability": "Blaze",
+    "item": "Life Orb",
+    "moves": [
+      "Flamethrower",
+      "Air Slash",
+      "Dragon Pulse",
+      "Focus Blast"
+    ],
+    "base": [
+      78,
+      84,
+      78,
+      109,
+      85,
+      100
+    ]
+  },
+  {
+    "id": 9,
+    "label": "Tortank",
+    "species": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "ability": "Torrent",
+    "item": "Expert Belt",
+    "moves": [
+      "Surf",
+      "Ice Beam",
+      "Rapid Spin",
+      "Brick Break"
+    ],
+    "base": [
+      79,
+      83,
+      100,
+      85,
+      105,
+      78
+    ]
+  },
+  {
+    "id": 18,
+    "label": "Roucarnage",
+    "species": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "ability": "Tangled Feet",
+    "item": "Expert Belt",
+    "moves": [
+      "Brave Bird",
+      "Return",
+      "U-turn",
+      "Air Slash"
+    ],
+    "base": [
+      83,
+      80,
+      75,
+      70,
+      70,
+      91
+    ]
+  },
+  {
+    "id": 26,
+    "label": "Raichu",
+    "species": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Static",
+    "item": "Focus Sash",
+    "moves": [
+      "Thunderbolt",
+      "Grass Knot",
+      "Brick Break",
+      "Thunder Wave"
+    ],
+    "base": [
+      60,
+      90,
+      55,
+      90,
+      80,
+      110
+    ]
+  },
+  {
+    "id": 34,
+    "label": "Nidoking",
+    "species": "Nidoking",
+    "types": [
+      "Poison",
+      "Ground"
+    ],
+    "ability": "Sheer Force",
+    "item": "Life Orb",
+    "moves": [
+      "Earthquake",
+      "Sludge Bomb",
+      "Ice Beam",
+      "Thunderbolt"
+    ],
+    "base": [
+      81,
+      102,
+      77,
+      85,
+      75,
+      85
+    ]
+  },
+  {
+    "id": 38,
+    "label": "Feunard",
+    "species": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "ability": "Flash Fire",
+    "item": "Focus Sash",
+    "moves": [
+      "Flamethrower",
+      "Dark Pulse",
+      "Energy Ball",
+      "Toxic"
+    ],
+    "base": [
+      73,
+      76,
+      75,
+      81,
+      100,
+      100
+    ]
+  },
+  {
+    "id": 59,
+    "label": "Arcanin",
+    "species": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "ability": "Intimidate",
+    "item": "Life Orb",
+    "moves": [
+      "Flare Blitz",
+      "Crunch",
+      "Wild Charge",
+      "Close Combat"
+    ],
+    "base": [
+      90,
+      110,
+      80,
+      100,
+      80,
+      95
+    ]
+  },
+  {
+    "id": 65,
+    "label": "Alakazam",
+    "species": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "ability": "Magic Guard",
+    "item": "Focus Sash",
+    "moves": [
+      "Psychic",
+      "Shadow Ball",
+      "Focus Blast",
+      "Recover"
+    ],
+    "base": [
+      55,
+      50,
+      45,
+      135,
+      95,
+      120
+    ]
+  },
+  {
+    "id": 68,
+    "label": "Mackogneur",
+    "species": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "ability": "Guts",
+    "item": "Leftovers",
+    "moves": [
+      "Close Combat",
+      "Stone Edge",
+      "Ice Punch",
+      "Payback"
+    ],
+    "base": [
+      90,
+      130,
+      80,
+      65,
+      85,
+      55
+    ]
+  },
+  {
+    "id": 73,
+    "label": "Tentacruel",
+    "species": "Tentacruel",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "ability": "Clear Body",
+    "item": "Expert Belt",
+    "moves": [
+      "Surf",
+      "Sludge Bomb",
+      "Ice Beam",
+      "Toxic"
+    ],
+    "base": [
+      80,
+      70,
+      65,
+      80,
+      120,
+      100
+    ]
+  },
+  {
+    "id": 76,
+    "label": "Grolem",
+    "species": "Golem",
+    "types": [
+      "Rock",
+      "Ground"
+    ],
+    "ability": "Sturdy",
+    "item": "Life Orb",
+    "moves": [
+      "Earthquake",
+      "Stone Edge",
+      "Fire Punch",
+      "Return"
+    ],
+    "base": [
+      80,
+      110,
+      130,
+      55,
+      65,
+      45
+    ]
+  },
+  {
+    "id": 94,
+    "label": "Ectoplasma",
+    "species": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "ability": "Levitate",
+    "item": "Focus Sash",
+    "moves": [
+      "Shadow Ball",
+      "Sludge Bomb",
+      "Thunderbolt",
+      "Focus Blast"
+    ],
+    "base": [
+      60,
+      65,
+      60,
+      130,
+      75,
+      110
+    ]
+  },
+  {
+    "id": 103,
+    "label": "Noadkoko",
+    "species": "Exeggutor",
+    "types": [
+      "Grass",
+      "Psychic"
+    ],
+    "ability": "Chlorophyll",
+    "item": "Leftovers",
+    "moves": [
+      "Psychic",
+      "Energy Ball",
+      "Leaf Storm",
+      "Toxic"
+    ],
+    "base": [
+      95,
+      95,
+      85,
+      125,
+      65,
+      55
+    ]
+  },
+  {
+    "id": 121,
+    "label": "Staross",
+    "species": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "ability": "Natural Cure",
+    "item": "Focus Sash",
+    "moves": [
+      "Surf",
+      "Psychic",
+      "Thunderbolt",
+      "Ice Beam"
+    ],
+    "base": [
+      60,
+      75,
+      85,
+      100,
+      85,
+      115
+    ]
+  },
+  {
+    "id": 130,
+    "label": "Léviator",
+    "species": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "ability": "Intimidate",
+    "item": "Leftovers",
+    "moves": [
+      "Waterfall",
+      "Earthquake",
+      "Stone Edge",
+      "Dragon Dance"
+    ],
+    "base": [
+      95,
+      125,
+      79,
+      60,
+      100,
+      81
+    ]
+  },
+  {
+    "id": 131,
+    "label": "Lokhlass",
+    "species": "Lapras",
+    "types": [
+      "Water",
+      "Ice"
+    ],
+    "ability": "Water Absorb",
+    "item": "Leftovers",
+    "moves": [
+      "Surf",
+      "Ice Beam",
+      "Thunderbolt",
+      "Psychic"
+    ],
+    "base": [
+      130,
+      85,
+      80,
+      85,
+      95,
+      60
+    ]
+  },
+  {
+    "id": 135,
+    "label": "Voltali",
+    "species": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Volt Absorb",
+    "item": "Focus Sash",
+    "moves": [
+      "Thunderbolt",
+      "Shadow Ball",
+      "Signal Beam",
+      "Thunder Wave"
+    ],
+    "base": [
+      65,
+      65,
+      60,
+      110,
+      95,
+      130
+    ]
+  },
+  {
+    "id": 143,
+    "label": "Ronflex",
+    "species": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "ability": "Thick Fat",
+    "item": "Leftovers",
+    "moves": [
+      "Return",
+      "Crunch",
+      "Earthquake",
+      "Brick Break"
+    ],
+    "base": [
+      160,
+      110,
+      65,
+      65,
+      110,
+      30
+    ]
+  },
+  {
+    "id": 149,
+    "label": "Dracolosse",
+    "species": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "ability": "Multiscale",
+    "item": "Leftovers",
+    "moves": [
+      "Dragon Claw",
+      "Fire Blast",
+      "Earthquake",
+      "Roost"
+    ],
+    "base": [
+      91,
+      134,
+      95,
+      100,
+      100,
+      80
+    ]
+  },
+  {
+    "id": 154,
+    "label": "Méganium",
+    "species": "Meganium",
+    "types": [
+      "Grass"
+    ],
+    "ability": "Overgrow",
+    "item": "Leftovers",
+    "moves": [
+      "Energy Ball",
+      "Earthquake",
+      "Toxic",
+      "Synthesis"
+    ],
+    "base": [
+      80,
+      82,
+      100,
+      83,
+      100,
+      80
+    ]
+  },
+  {
+    "id": 157,
+    "label": "Typhlosion",
+    "species": "Typhlosion",
+    "types": [
+      "Fire"
+    ],
+    "ability": "Blaze",
+    "item": "Life Orb",
+    "moves": [
+      "Flamethrower",
+      "Fire Blast",
+      "Focus Blast",
+      "Solar Beam"
+    ],
+    "base": [
+      78,
+      84,
+      78,
+      109,
+      85,
+      100
+    ]
+  },
+  {
+    "id": 160,
+    "label": "Aligatueur",
+    "species": "Feraligatr",
+    "types": [
+      "Water"
+    ],
+    "ability": "Torrent",
+    "item": "Life Orb",
+    "moves": [
+      "Waterfall",
+      "Ice Beam",
+      "Crunch",
+      "Earthquake"
+    ],
+    "base": [
+      85,
+      105,
+      100,
+      79,
+      83,
+      78
+    ]
+  },
+  {
+    "id": 181,
+    "label": "Pharamp",
+    "species": "Ampharos",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Static",
+    "item": "Leftovers",
+    "moves": [
+      "Thunderbolt",
+      "Signal Beam",
+      "Focus Blast",
+      "Thunder Wave"
+    ],
+    "base": [
+      90,
+      75,
+      85,
+      115,
+      90,
+      55
+    ]
+  },
+  {
+    "id": 196,
+    "label": "Mentali",
+    "species": "Espeon",
+    "types": [
+      "Psychic"
+    ],
+    "ability": "Synchronize",
+    "item": "Focus Sash",
+    "moves": [
+      "Psychic",
+      "Shadow Ball",
+      "Grass Knot",
+      "Calm Mind"
+    ],
+    "base": [
+      65,
+      65,
+      60,
+      130,
+      95,
+      110
+    ]
+  },
+  {
+    "id": 197,
+    "label": "Noctali",
+    "species": "Umbreon",
+    "types": [
+      "Dark"
+    ],
+    "ability": "Synchronize",
+    "item": "Leftovers",
+    "moves": [
+      "Dark Pulse",
+      "Psychic",
+      "Toxic",
+      "Moonlight"
+    ],
+    "base": [
+      95,
+      65,
+      110,
+      60,
+      130,
+      65
+    ]
+  },
+  {
+    "id": 208,
+    "label": "Steelix",
+    "species": "Steelix",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "ability": "Sturdy",
+    "item": "Expert Belt",
+    "moves": [
+      "Earthquake",
+      "Iron Head",
+      "Stone Edge",
+      "Crunch"
+    ],
+    "base": [
+      75,
+      85,
+      200,
+      55,
+      65,
+      30
+    ]
+  },
+  {
+    "id": 212,
+    "label": "Cizayox",
+    "species": "Scizor",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "ability": "Technician",
+    "item": "Life Orb",
+    "moves": [
+      "Bullet Punch",
+      "X-Scissor",
+      "Night Slash",
+      "Swords Dance"
+    ],
+    "base": [
+      70,
+      130,
+      100,
+      55,
+      80,
+      65
+    ]
+  },
+  {
+    "id": 214,
+    "label": "Scarhino",
+    "species": "Heracross",
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "ability": "Guts",
+    "item": "Life Orb",
+    "moves": [
+      "Megahorn",
+      "Close Combat",
+      "Stone Edge",
+      "Night Slash"
+    ],
+    "base": [
+      80,
+      125,
+      75,
+      40,
+      95,
+      85
+    ]
+  },
+  {
+    "id": 229,
+    "label": "Démolosse",
+    "species": "Houndoom",
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "ability": "Flash Fire",
+    "item": "Life Orb",
+    "moves": [
+      "Flamethrower",
+      "Dark Pulse",
+      "Sludge Bomb",
+      "Nasty Plot"
+    ],
+    "base": [
+      75,
+      90,
+      50,
+      110,
+      80,
+      95
+    ]
+  },
+  {
+    "id": 230,
+    "label": "Hyporoi",
+    "species": "Kingdra",
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "ability": "Swift Swim",
+    "item": "Expert Belt",
+    "moves": [
+      "Surf",
+      "Dragon Pulse",
+      "Ice Beam",
+      "Flash Cannon"
+    ],
+    "base": [
+      75,
+      95,
+      95,
+      95,
+      95,
+      85
+    ]
+  },
+  {
+    "id": 248,
+    "label": "Tyranocif",
+    "species": "Tyranitar",
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "ability": "Sand Stream",
+    "item": "Leftovers",
+    "moves": [
+      "Stone Edge",
+      "Crunch",
+      "Earthquake",
+      "Ice Beam"
+    ],
+    "base": [
+      100,
+      134,
+      110,
+      95,
+      100,
+      61
+    ]
+  },
+  {
+    "id": 254,
+    "label": "Jungko",
+    "species": "Sceptile",
+    "types": [
+      "Grass"
+    ],
+    "ability": "Overgrow",
+    "item": "Focus Sash",
+    "moves": [
+      "Energy Ball",
+      "Dragon Pulse",
+      "Focus Blast",
+      "Leaf Storm"
+    ],
+    "base": [
+      70,
+      85,
+      65,
+      105,
+      85,
+      120
+    ]
+  },
+  {
+    "id": 257,
+    "label": "Braségali",
+    "species": "Blaziken",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "ability": "Blaze",
+    "item": "Life Orb",
+    "moves": [
+      "Flare Blitz",
+      "High Jump Kick",
+      "Stone Edge",
+      "Brave Bird"
+    ],
+    "base": [
+      80,
+      120,
+      70,
+      110,
+      70,
+      80
+    ]
+  },
+  {
+    "id": 260,
+    "label": "Laggron",
+    "species": "Swampert",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "ability": "Torrent",
+    "item": "Leftovers",
+    "moves": [
+      "Waterfall",
+      "Earthquake",
+      "Ice Beam",
+      "Stone Edge"
+    ],
+    "base": [
+      100,
+      110,
+      90,
+      85,
+      90,
+      60
+    ]
+  },
+  {
+    "id": 282,
+    "label": "Gardevoir",
+    "species": "Gardevoir",
+    "types": [
+      "Psychic"
+    ],
+    "ability": "Synchronize",
+    "item": "Life Orb",
+    "moves": [
+      "Psychic",
+      "Shadow Ball",
+      "Thunderbolt",
+      "Calm Mind"
+    ],
+    "base": [
+      68,
+      65,
+      65,
+      125,
+      115,
+      80
+    ]
+  },
+  {
+    "id": 306,
+    "label": "Galeking",
+    "species": "Aggron",
+    "types": [
+      "Steel",
+      "Rock"
+    ],
+    "ability": "Sturdy",
+    "item": "Life Orb",
+    "moves": [
+      "Iron Head",
+      "Stone Edge",
+      "Earthquake",
+      "Brick Break"
+    ],
+    "base": [
+      70,
+      110,
+      180,
+      60,
+      60,
+      50
+    ]
+  },
+  {
+    "id": 330,
+    "label": "Libégon",
+    "species": "Flygon",
+    "types": [
+      "Ground",
+      "Dragon"
+    ],
+    "ability": "Levitate",
+    "item": "Life Orb",
+    "moves": [
+      "Earthquake",
+      "Dragon Claw",
+      "Stone Edge",
+      "Fire Punch"
+    ],
+    "base": [
+      80,
+      100,
+      80,
+      80,
+      80,
+      100
+    ]
+  },
+  {
+    "id": 334,
+    "label": "Altaria",
+    "species": "Altaria",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "ability": "Natural Cure",
+    "item": "Expert Belt",
+    "moves": [
+      "Dragon Pulse",
+      "Cotton Guard",
+      "Flamethrower",
+      "Roost"
+    ],
+    "base": [
+      75,
+      70,
+      90,
+      70,
+      105,
+      80
+    ]
+  },
+  {
+    "id": 350,
+    "label": "Milobellus",
+    "species": "Milotic",
+    "types": [
+      "Water"
+    ],
+    "ability": "Marvel Scale",
+    "item": "Leftovers",
+    "moves": [
+      "Surf",
+      "Ice Beam",
+      "Dragon Pulse",
+      "Recover"
+    ],
+    "base": [
+      95,
+      60,
+      79,
+      100,
+      125,
+      81
+    ]
+  },
+  {
+    "id": 359,
+    "label": "Absol",
+    "species": "Absol",
+    "types": [
+      "Dark"
+    ],
+    "ability": "Super Luck",
+    "item": "Life Orb",
+    "moves": [
+      "Night Slash",
+      "Stone Edge",
+      "Sucker Punch",
+      "Superpower"
+    ],
+    "base": [
+      65,
+      130,
+      60,
+      75,
+      60,
+      75
+    ]
+  },
+  {
+    "id": 373,
+    "label": "Drattak",
+    "species": "Salamence",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "ability": "Intimidate",
+    "item": "Life Orb",
+    "moves": [
+      "Dragon Claw",
+      "Fire Blast",
+      "Earthquake",
+      "Stone Edge"
+    ],
+    "base": [
+      95,
+      135,
+      80,
+      110,
+      80,
+      100
+    ]
+  },
+  {
+    "id": 376,
+    "label": "Métalosse",
+    "species": "Metagross",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "ability": "Clear Body",
+    "item": "Life Orb",
+    "moves": [
+      "Iron Head",
+      "Zen Headbutt",
+      "Earthquake",
+      "Bullet Punch"
+    ],
+    "base": [
+      80,
+      135,
+      130,
+      95,
+      90,
+      70
+    ]
+  },
+  {
+    "id": 389,
+    "label": "Torterra",
+    "species": "Torterra",
+    "types": [
+      "Grass",
+      "Ground"
+    ],
+    "ability": "Overgrow",
+    "item": "Leftovers",
+    "moves": [
+      "Earthquake",
+      "Wood Hammer",
+      "Stone Edge",
+      "Crunch"
+    ],
+    "base": [
+      95,
+      109,
+      105,
+      75,
+      85,
+      56
+    ]
+  },
+  {
+    "id": 392,
+    "label": "Simiabraz",
+    "species": "Infernape",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "ability": "Blaze",
+    "item": "Life Orb",
+    "moves": [
+      "Flare Blitz",
+      "Close Combat",
+      "U-turn",
+      "Stone Edge"
+    ],
+    "base": [
+      76,
+      104,
+      71,
+      104,
+      71,
+      108
+    ]
+  },
+  {
+    "id": 395,
+    "label": "Pingoléon",
+    "species": "Empoleon",
+    "types": [
+      "Water",
+      "Steel"
+    ],
+    "ability": "Torrent",
+    "item": "Life Orb",
+    "moves": [
+      "Surf",
+      "Flash Cannon",
+      "Ice Beam",
+      "Grass Knot"
+    ],
+    "base": [
+      84,
+      86,
+      88,
+      111,
+      101,
+      60
+    ]
+  },
+  {
+    "id": 405,
+    "label": "Luxray",
+    "species": "Luxray",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Intimidate",
+    "item": "Life Orb",
+    "moves": [
+      "Wild Charge",
+      "Crunch",
+      "Ice Fang",
+      "Thunderbolt"
+    ],
+    "base": [
+      80,
+      120,
+      79,
+      95,
+      79,
+      70
+    ]
+  },
+  {
+    "id": 407,
+    "label": "Roserade",
+    "species": "Roserade",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "ability": "Natural Cure",
+    "item": "Life Orb",
+    "moves": [
+      "Energy Ball",
+      "Sludge Bomb",
+      "Shadow Ball",
+      "Toxic"
+    ],
+    "base": [
+      60,
+      70,
+      65,
+      125,
+      105,
+      90
+    ]
+  },
+  {
+    "id": 409,
+    "label": "Charkos",
+    "species": "Rampardos",
+    "types": [
+      "Rock"
+    ],
+    "ability": "Mold Breaker",
+    "item": "Life Orb",
+    "moves": [
+      "Stone Edge",
+      "Earthquake",
+      "Zen Headbutt",
+      "Crunch"
+    ],
+    "base": [
+      97,
+      165,
+      60,
+      65,
+      50,
+      58
+    ]
+  },
+  {
+    "id": 445,
+    "label": "Carchacrok",
+    "species": "Garchomp",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "ability": "Sand Veil",
+    "item": "Leftovers",
+    "moves": [
+      "Earthquake",
+      "Dragon Claw",
+      "Stone Edge",
+      "Fire Fang"
+    ],
+    "base": [
+      108,
+      130,
+      95,
+      80,
+      85,
+      102
+    ]
+  },
+  {
+    "id": 448,
+    "label": "Lucario",
+    "species": "Lucario",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "ability": "Inner Focus",
+    "item": "Life Orb",
+    "moves": [
+      "Close Combat",
+      "Flash Cannon",
+      "Dragon Pulse",
+      "Extreme Speed"
+    ],
+    "base": [
+      70,
+      110,
+      70,
+      115,
+      70,
+      90
+    ]
+  },
+  {
+    "id": 461,
+    "label": "Dimoret",
+    "species": "Weavile",
+    "types": [
+      "Dark",
+      "Ice"
+    ],
+    "ability": "Pressure",
+    "item": "Focus Sash",
+    "moves": [
+      "Ice Punch",
+      "Night Slash",
+      "Brick Break",
+      "Ice Beam"
+    ],
+    "base": [
+      70,
+      120,
+      65,
+      45,
+      85,
+      125
+    ]
+  },
+  {
+    "id": 462,
+    "label": "Magnézone",
+    "species": "Magnezone",
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "ability": "Magnet Pull",
+    "item": "Life Orb",
+    "moves": [
+      "Thunderbolt",
+      "Flash Cannon",
+      "Volt Switch",
+      "Metal Sound"
+    ],
+    "base": [
+      70,
+      70,
+      115,
+      130,
+      90,
+      60
+    ]
+  },
+  {
+    "id": 464,
+    "label": "Rhinastoc",
+    "species": "Rhyperior",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "ability": "Solid Rock",
+    "item": "Leftovers",
+    "moves": [
+      "Earthquake",
+      "Stone Edge",
+      "Megahorn",
+      "Ice Beam"
+    ],
+    "base": [
+      115,
+      140,
+      130,
+      55,
+      55,
+      40
+    ]
+  },
+  {
+    "id": 466,
+    "label": "Élekable",
+    "species": "Electivire",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Motor Drive",
+    "item": "Life Orb",
+    "moves": [
+      "Wild Charge",
+      "Ice Punch",
+      "Earthquake",
+      "Brick Break"
+    ],
+    "base": [
+      75,
+      123,
+      67,
+      95,
+      85,
+      95
+    ]
+  },
+  {
+    "id": 468,
+    "label": "Togekiss",
+    "species": "Togekiss",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "ability": "Serene Grace",
+    "item": "Life Orb",
+    "moves": [
+      "Air Slash",
+      "Aura Sphere",
+      "Flamethrower",
+      "Roost"
+    ],
+    "base": [
+      85,
+      50,
+      95,
+      120,
+      115,
+      80
+    ]
+  },
+  {
+    "id": 470,
+    "label": "Phyllali",
+    "species": "Leafeon",
+    "types": [
+      "Grass"
+    ],
+    "ability": "Leaf Guard",
+    "item": "Life Orb",
+    "moves": [
+      "Leaf Blade",
+      "X-Scissor",
+      "Return",
+      "Swords Dance"
+    ],
+    "base": [
+      65,
+      110,
+      130,
+      60,
+      65,
+      95
+    ]
+  },
+  {
+    "id": 471,
+    "label": "Givrali",
+    "species": "Glaceon",
+    "types": [
+      "Ice"
+    ],
+    "ability": "Snow Cloak",
+    "item": "Life Orb",
+    "moves": [
+      "Ice Beam",
+      "Shadow Ball",
+      "Signal Beam",
+      "Hail"
+    ],
+    "base": [
+      65,
+      60,
+      110,
+      130,
+      95,
+      65
+    ]
+  },
+  {
+    "id": 475,
+    "label": "Gallame",
+    "species": "Gallade",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "ability": "Steadfast",
+    "item": "Life Orb",
+    "moves": [
+      "Close Combat",
+      "Zen Headbutt",
+      "Night Slash",
+      "Swords Dance"
+    ],
+    "base": [
+      68,
+      125,
+      65,
+      65,
+      115,
+      80
+    ]
+  },
+  {
+    "id": 477,
+    "label": "Noctunoir",
+    "species": "Dusknoir",
+    "types": [
+      "Ghost"
+    ],
+    "ability": "Pressure",
+    "item": "Life Orb",
+    "moves": [
+      "Shadow Punch",
+      "Earthquake",
+      "Ice Punch",
+      "Toxic"
+    ],
+    "base": [
+      45,
+      100,
+      135,
+      65,
+      135,
+      45
+    ]
+  },
+  {
+    "id": 497,
+    "label": "Majaspic",
+    "species": "Serperior",
+    "types": [
+      "Grass"
+    ],
+    "ability": "Overgrow",
+    "item": "Focus Sash",
+    "moves": [
+      "Leaf Blade",
+      "Leaf Storm",
+      "Dragon Pulse",
+      "Glare"
+    ],
+    "base": [
+      75,
+      75,
+      95,
+      75,
+      95,
+      113
+    ]
+  },
+  {
+    "id": 500,
+    "label": "Roitiflam",
+    "species": "Emboar",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "ability": "Blaze",
+    "item": "Life Orb",
+    "moves": [
+      "Flare Blitz",
+      "Hammer Arm",
+      "Stone Edge",
+      "Wild Charge"
+    ],
+    "base": [
+      110,
+      123,
+      65,
+      100,
+      65,
+      65
+    ]
+  },
+  {
+    "id": 503,
+    "label": "Clamiral",
+    "species": "Samurott",
+    "types": [
+      "Water"
+    ],
+    "ability": "Torrent",
+    "item": "Leftovers",
+    "moves": [
+      "Surf",
+      "Ice Beam",
+      "Megahorn",
+      "Grass Knot"
+    ],
+    "base": [
+      95,
+      100,
+      85,
+      108,
+      70,
+      70
+    ]
+  },
+  {
+    "id": 523,
+    "label": "Zéblitz",
+    "species": "Zebstrika",
+    "types": [
+      "Electric"
+    ],
+    "ability": "Motor Drive",
+    "item": "Focus Sash",
+    "moves": [
+      "Wild Charge",
+      "Flame Charge",
+      "Thunderbolt",
+      "Thunder Wave"
+    ],
+    "base": [
+      75,
+      100,
+      63,
+      80,
+      63,
+      116
+    ]
+  },
+  {
+    "id": 530,
+    "label": "Minotaupe",
+    "species": "Excadrill",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "ability": "Mold Breaker",
+    "item": "Life Orb",
+    "moves": [
+      "Earthquake",
+      "Iron Head",
+      "Rock Slide",
+      "Swords Dance"
+    ],
+    "base": [
+      110,
+      135,
+      60,
+      50,
+      65,
+      88
+    ]
+  },
+  {
+    "id": 534,
+    "label": "Bétochef",
+    "species": "Conkeldurr",
+    "types": [
+      "Fighting"
+    ],
+    "ability": "Guts",
+    "item": "Leftovers",
+    "moves": [
+      "Drain Punch",
+      "Mach Punch",
+      "Stone Edge",
+      "Ice Punch"
+    ],
+    "base": [
+      105,
+      140,
+      95,
+      55,
+      65,
+      45
+    ]
+  },
+  {
+    "id": 549,
+    "label": "Fragilady",
+    "species": "Lilligant",
+    "types": [
+      "Grass"
+    ],
+    "ability": "Chlorophyll",
+    "item": "Life Orb",
+    "moves": [
+      "Energy Ball",
+      "Leaf Storm",
+      "Sleep Powder",
+      "Quiver Dance"
+    ],
+    "base": [
+      70,
+      60,
+      75,
+      110,
+      75,
+      90
+    ]
+  },
+  {
+    "id": 553,
+    "label": "Crocorible",
+    "species": "Krookodile",
+    "types": [
+      "Ground",
+      "Dark"
+    ],
+    "ability": "Intimidate",
+    "item": "Life Orb",
+    "moves": [
+      "Earthquake",
+      "Crunch",
+      "Stone Edge",
+      "Brick Break"
+    ],
+    "base": [
+      95,
+      117,
+      80,
+      65,
+      70,
+      92
+    ]
+  },
+  {
+    "id": 560,
+    "label": "Baggaïd",
+    "species": "Scrafty",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "ability": "Shed Skin",
+    "item": "Expert Belt",
+    "moves": [
+      "Crunch",
+      "Brick Break",
+      "Stone Edge",
+      "Bulk Up"
+    ],
+    "base": [
+      65,
+      90,
+      115,
+      45,
+      115,
+      58
+    ]
+  },
+  {
+    "id": 565,
+    "label": "Mégapagos",
+    "species": "Carracosta",
+    "types": [
+      "Water",
+      "Rock"
+    ],
+    "ability": "Sturdy",
+    "item": "Life Orb",
+    "moves": [
+      "Waterfall",
+      "Stone Edge",
+      "Aqua Jet",
+      "Crunch"
+    ],
+    "base": [
+      74,
+      108,
+      133,
+      83,
+      65,
+      32
+    ]
+  },
+  {
+    "id": 567,
+    "label": "Aéroptéryx",
+    "species": "Archeops",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "ability": "Defeatist",
+    "item": "Flying Gem",
+    "moves": [
+      "Stone Edge",
+      "Acrobatics",
+      "Dragon Claw",
+      "Crunch"
+    ],
+    "base": [
+      75,
+      140,
+      65,
+      112,
+      65,
+      110
+    ]
+  },
+  {
+    "id": 571,
+    "label": "Zoroark",
+    "species": "Zoroark",
+    "types": [
+      "Dark"
+    ],
+    "ability": "Illusion",
+    "item": "Focus Sash",
+    "moves": [
+      "Night Slash",
+      "Flamethrower",
+      "Focus Blast",
+      "Dark Pulse"
+    ],
+    "base": [
+      60,
+      105,
+      60,
+      120,
+      60,
+      105
+    ]
+  },
+  {
+    "id": 579,
+    "label": "Symbios",
+    "species": "Reuniclus",
+    "types": [
+      "Psychic"
+    ],
+    "ability": "Magic Guard",
+    "item": "Leftovers",
+    "moves": [
+      "Psychic",
+      "Shadow Ball",
+      "Focus Blast",
+      "Recover"
+    ],
+    "base": [
+      110,
+      65,
+      75,
+      125,
+      85,
+      30
+    ]
+  },
+  {
+    "id": 584,
+    "label": "Sorbouboul",
+    "species": "Vanilluxe",
+    "types": [
+      "Ice"
+    ],
+    "ability": "Ice Body",
+    "item": "Life Orb",
+    "moves": [
+      "Blizzard",
+      "Frost Breath",
+      "Flash Cannon",
+      "Hail"
+    ],
+    "base": [
+      71,
+      95,
+      85,
+      110,
+      95,
+      79
+    ]
+  },
+  {
+    "id": 596,
+    "label": "Mygavolt",
+    "species": "Galvantula",
+    "types": [
+      "Bug",
+      "Electric"
+    ],
+    "ability": "Compound Eyes",
+    "item": "Focus Sash",
+    "moves": [
+      "Thunderbolt",
+      "Bug Buzz",
+      "Energy Ball",
+      "Thunder Wave"
+    ],
+    "base": [
+      70,
+      77,
+      60,
+      97,
+      60,
+      108
+    ]
+  },
+  {
+    "id": 601,
+    "label": "Cliticlic",
+    "species": "Klinklang",
+    "types": [
+      "Steel"
+    ],
+    "ability": "Plus",
+    "item": "Life Orb",
+    "moves": [
+      "Flash Cannon",
+      "Thunderbolt",
+      "Hyper Beam",
+      "Metal Sound"
+    ],
+    "base": [
+      60,
+      100,
+      115,
+      70,
+      85,
+      90
+    ]
+  },
+  {
+    "id": 609,
+    "label": "Lugulabre",
+    "species": "Chandelure",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "ability": "Flash Fire",
+    "item": "Life Orb",
+    "moves": [
+      "Shadow Ball",
+      "Fire Blast",
+      "Psychic",
+      "Energy Ball"
+    ],
+    "base": [
+      60,
+      55,
+      90,
+      145,
+      90,
+      80
+    ]
+  },
+  {
+    "id": 612,
+    "label": "Tranchodon",
+    "species": "Haxorus",
+    "types": [
+      "Dragon"
+    ],
+    "ability": "Mold Breaker",
+    "item": "Life Orb",
+    "moves": [
+      "Dragon Claw",
+      "Earthquake",
+      "Rock Slide",
+      "Swords Dance"
+    ],
+    "base": [
+      76,
+      147,
+      90,
+      60,
+      70,
+      97
+    ]
+  },
+  {
+    "id": 614,
+    "label": "Polagriffe",
+    "species": "Beartic",
+    "types": [
+      "Ice"
+    ],
+    "ability": "Snow Cloak",
+    "item": "Life Orb",
+    "moves": [
+      "Ice Punch",
+      "Stone Edge",
+      "Aqua Jet",
+      "Brick Break"
+    ],
+    "base": [
+      95,
+      130,
+      80,
+      70,
+      80,
+      50
+    ]
+  },
+  {
+    "id": 620,
+    "label": "Shaofouine",
+    "species": "Mienshao",
+    "types": [
+      "Fighting"
+    ],
+    "ability": "Regenerator",
+    "item": "Focus Sash",
+    "moves": [
+      "High Jump Kick",
+      "Stone Edge",
+      "Acrobatics",
+      "Fake Out"
+    ],
+    "base": [
+      65,
+      125,
+      60,
+      95,
+      60,
+      105
+    ]
+  },
+  {
+    "id": 628,
+    "label": "Gueriaigle",
+    "species": "Braviary",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "ability": "Defiant",
+    "item": "Life Orb",
+    "moves": [
+      "Brave Bird",
+      "Return",
+      "Rock Slide",
+      "Superpower"
+    ],
+    "base": [
+      100,
+      123,
+      75,
+      57,
+      75,
+      80
+    ]
+  },
+  {
+    "id": 635,
+    "label": "Trioxhydre",
+    "species": "Hydreigon",
+    "types": [
+      "Dark",
+      "Dragon"
+    ],
+    "ability": "Levitate",
+    "item": "Leftovers",
+    "moves": [
+      "Dragon Pulse",
+      "Dark Pulse",
+      "Fire Blast",
+      "Surf"
+    ],
+    "base": [
+      92,
+      105,
+      90,
+      125,
+      90,
+      98
+    ]
+  },
+  {
+    "id": 637,
+    "label": "Pyrax",
+    "species": "Volcarona",
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "ability": "Flame Body",
+    "item": "Life Orb",
+    "moves": [
+      "Bug Buzz",
+      "Fire Blast",
+      "Psychic",
+      "Roost"
+    ],
+    "base": [
+      85,
+      60,
+      65,
+      135,
+      105,
+      100
+    ]
+  }
+]
