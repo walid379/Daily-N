@@ -165,8 +165,8 @@ function openMoveInfo(index:number):void {selectedMove.value=index;expandedMove.
 function refreshDay():void {const next=parisDate();if(next===key.value)return;battle?.destroy();battle=null;battleOrder.value=null;resetTimeline();running.value=false;view.value=null;live.value=null;inPractice.value=false;key.value=next;daily.value=readDaily(next);stats.value=readStats();changeScreen('home');toast('Nouveau défi disponible !');}
 function tick():void {now.value=new Date();refreshDay();}
 function reset():void {if(!window.confirm('Effacer les sauvegardes et statistiques locales de Daily N ?'))return;battle?.destroy();battle=null;battleOrder.value=null;resetTimeline();running.value=false;view.value=null;live.value=null;wipeStorage();daily.value=readDaily(key.value);stats.value=readStats();changeScreen('home');toast('Données effacées.');}
-async function share():Promise<void> {const result=daily.value.result;const survivors=view.value&&!inPractice.value?view.value.allies.filter(m=>!m.fainted).length:null;
-  const text=`DAILY N #${number.value}\nN · ${dragon.value}\n${result==='win'?'VICTOIRE':result==='loss'?'DÉFAITE':result==='draw'?'NUL':'NON JOUÉ'}\n${survivors===null?'□□□□□□':'🟩'.repeat(survivors)+'⬛'.repeat(6-survivors)}\n#DailyN`;
+async function share():Promise<void> {const result=daily.value.result;
+  const text=`DAILY N #${number.value}\nN · ${dragon.value}\n${result==='win'?'VICTOIRE':result==='loss'?'DÉFAITE':result==='draw'?'NUL':'NON JOUÉ'}\n#DailyN`;
   try{await navigator.clipboard.writeText(text);toast('Résultat copié !');}catch{toast('Impossible de copier sur cet appareil.');}
 }
 onMounted(()=>{const v=localStorage.getItem('daily-n-animation-speed');if(v==='cinematic'||v==='normal'||v==='fast')speed.value=v;tickHandle=window.setInterval(tick,1000);if(daily.value.locked&&!daily.value.result){void start(false);}});
